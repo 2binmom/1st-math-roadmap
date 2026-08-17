@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>투빈맘's 엄마표수학💗 로드맵 (초1 성빈)</title>
+<link rel="icon" href="character.png">
+<meta name="description" content="7세부터 초1 여름방학까지, 성빈이의 엄마표 수학만 시기별로 모아 정리했어요">
+<meta property="og:title" content="투빈맘's 엄마표수학💗 로드맵 (초1 성빈)">
+<meta property="og:description" content="7세부터 초1 여름방학까지, 성빈이의 엄마표 수학만 시기별로 모아 정리했어요">
+<meta property="og:image" content="https://2binmom.github.io/1st-math-roadmap/og-image.png">
+<meta property="og:url" content="https://2binmom.github.io/1st-math-roadmap/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="투빈맘's 엄마표수학💗 로드맵 (초1 성빈)">
+<meta name="twitter:description" content="7세부터 초1 여름방학까지, 성빈이의 엄마표 수학만 시기별로 모아 정리했어요">
+<meta name="twitter:image" content="https://2binmom.github.io/1st-math-roadmap/og-image.png">
+<style>
+  @font-face{
+    font-family:'Jalnan';
+    src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight:normal; font-style:normal; font-display:swap;
+  }
+  :root{
+    --pink:#FF6B8B; --pink-light:#FF9EB5; --pink-deep:#E0567A; --pink-bg:#FFE9EF;
+    --ink:#3A2A33; --sub:#8A7580; --line:#F5DEE6;
+    --card:#FFFFFF; --bg:#FFF8F6; --tip-bg:#FAF3EC;
+    --s0:#E0567A; --s0-bg:#FAF3EC;
+    --s1:#E0567A; --s1-bg:#FAF3EC;
+    --s2:#E0567A; --s2-bg:#FAF3EC;
+    --s3:#E0567A; --s3-bg:#FAF3EC;
+    --radius:18px;
+    --shadow:0 2px 12px rgba(224,86,122,0.09);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit;}
+  .wrap{max-width:640px; margin:0 auto; padding:0 18px 60px;}
+  h1,h2,h3{text-wrap:balance;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--pink); outline-offset:2px; border-radius:4px;}
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important;} }
+
+  /* ── 헤더 ── */
+  header.hero{
+    background:linear-gradient(160deg,#FFD9C8 0%,#FFC6C6 55%,#FFB9CB 100%);
+    padding:36px 18px 32px; text-align:center; color:var(--ink);
+  }
+  header.hero .logo{width:104px; margin:0 auto 6px;}
+  header.hero .badge{
+    display:inline-block; background:#fff; border:1px solid rgba(224,86,122,0.32);
+    border-radius:999px; padding:6px 15px; font-size:16px; color:var(--pink-deep);
+    margin-bottom:13px; font-weight:700;
+  }
+  header.hero h1{
+    font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    font-size:clamp(24px,5vw,34px); margin:0 0 12px; line-height:1.5;
+  }
+  header.hero p{
+    font-family:'Jalnan',-apple-system,sans-serif; color:#6B4E58; font-size:17px;
+    line-height:1.85; margin:0 auto 18px; max-width:480px;
+  }
+  header.hero .hero-actions{display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap;}
+  .insta{
+    display:inline-flex; align-items:center; gap:6px; font-size:17px; font-weight:700;
+    color:#fff; text-decoration:none; background:var(--pink-deep);
+    padding:9px 17px; border-radius:999px;
+  }
+  header.hero .share-btn{
+    display:inline-flex; align-items:center; gap:6px; font-size:17px; font-weight:700;
+    color:#3A2A33; background:#FEE500; border:none;
+    padding:9px 17px; border-radius:999px; cursor:pointer; font-family:inherit;
+  }
+  header.hero .share-btn.copied{background:var(--pink-deep); color:#fff;}
+
+  /* ── 인트로 ── */
+  .intro{max-width:640px; margin:0 auto; padding:28px 18px 4px;}
+  .intro-box{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px; font-size:17.5px; color:#5A4650; line-height:1.9;
+  }
+  .intro-box strong{color:var(--pink-deep);}
+  .toc{
+    display:flex; flex-wrap:wrap; gap:8px; margin-top:16px;
+  }
+  .toc a{
+    font-size:15.5px; font-weight:700; color:var(--pink-deep); text-decoration:none;
+    background:var(--pink-bg); border-radius:999px; padding:6px 13px;
+  }
+  .toc a:hover{background:var(--pink-light); color:#fff;}
+
+  /* ── 번호 카드형 이동 메뉴 ── */
+  .step-nav{display:flex; flex-direction:column; gap:14px; margin-top:22px;}
+  .step-nav-meta{
+    font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    font-size:25px; color:var(--pink-deep); text-align:center; line-height:1.4;
+    background:var(--pink-bg); border-radius:16px; padding:16px 18px;
+    margin-top:28px; margin-bottom:18px;
+  }
+  .step-nav-card{
+    display:block; background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:20px 22px; text-decoration:none; color:inherit;
+    transition:transform .15s, box-shadow .15s, border-color .15s;
+  }
+  .step-nav-card:hover{transform:translateY(-2px); box-shadow:0 6px 16px rgba(224,86,122,.14); border-color:var(--pink-light);}
+  .step-nav-num{
+    width:34px; height:34px; border-radius:50%; flex-shrink:0;
+    background:var(--pink-bg); color:var(--pink-deep);
+    display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px;
+  }
+  .step-nav-row{display:flex; align-items:flex-start; gap:14px;}
+  .step-nav-body{flex:1; min-width:0;}
+  .step-nav-title{
+    font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    font-size:21px; color:var(--ink); margin:0 0 6px; display:flex; align-items:center; gap:6px;
+  }
+  .step-nav-tag{
+    font-size:13.5px; font-weight:800; color:var(--pink-deep); background:var(--pink-bg);
+    border-radius:999px; padding:2px 9px; margin-left:2px;
+  }
+  .step-nav-desc{font-size:16px; color:var(--sub); line-height:1.75; margin:0;}
+  .step-nav-desc b{color:var(--pink-deep);}
+
+  /* ── 목록 / 상세 화면 전환 ── */
+  #detailView{display:none;}
+  #detailView.open{display:block;}
+  .step{display:none;}
+  .step.open{display:block;}
+  .detail-topbar{
+    max-width:640px; margin:0 auto; padding:18px 18px 0;
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+  }
+  .back-btn{
+    display:inline-flex; align-items:center; gap:6px; background:#fff; border:1.5px solid var(--line);
+    border-radius:999px; padding:9px 17px; font-size:16.5px; font-weight:700; color:var(--pink-deep);
+    cursor:pointer; font-family:inherit; transition:all .15s;
+  }
+  .back-btn:hover{background:var(--pink-bg); border-color:var(--pink-light);}
+  .detail-dots{display:flex; gap:6px;}
+  .detail-dots span{width:7px; height:7px; border-radius:50%; background:var(--line);}
+  .detail-dots span.on{background:var(--pink);}
+  .step-jump{display:flex; gap:8px; margin-top:22px;}
+  .step-jump button{
+    flex:1; border:1.5px solid var(--line); background:#fff; color:var(--pink-deep);
+    border-radius:14px; padding:14px 10px; font-size:16.5px; font-weight:800;
+    cursor:pointer; font-family:inherit; transition:all .15s;
+  }
+  .step-jump button:hover{background:var(--pink-bg); border-color:var(--pink-light);}
+  .step-jump button.main{background:var(--pink); border-color:var(--pink); color:#fff;}
+
+  .timeline{position:relative; padding:8px 0 4px;}
+  .step{position:relative; margin-bottom:48px; scroll-margin-top:20px;}
+  .step-num{
+    font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    font-size:46px; line-height:1; color:var(--pink-deep); margin-bottom:6px;
+  }
+  .step-tag{
+    display:inline-block; font-size:14px; font-weight:800; color:var(--pink-deep);
+    background:var(--pink-bg); border-radius:999px; padding:5px 13px; margin-bottom:10px;
+  }
+  .step h2{
+    font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    font-size:23px; margin:0 0 14px; padding-bottom:14px; border-bottom:1.5px solid var(--line);
+  }
+  .step-summary{font-size:16.5px; color:var(--sub); margin:0 0 16px; line-height:1.85;}
+  .step-summary b{color:var(--pink-deep);}
+
+  .change-box{
+    border-top:1.5px solid var(--line); padding:16px 0 0; margin:20px 0 0;
+    font-size:16px; line-height:1.85; color:var(--ink);
+  }
+  .change-box b:first-child{
+    display:block; font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    color:var(--pink-deep); font-size:17.5px; margin-bottom:6px;
+  }
+  span.gap{display:block; height:0; margin-top:5px;}
+
+  .keep-note{
+    font-size:15.5px; color:var(--sub); background:none; border:none;
+    border-top:1.5px solid var(--line); border-radius:0; padding:14px 0 0; margin:18px 0 0;
+  }
+  .keep-note b:first-child{font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal; font-size:17.5px; color:var(--pink-deep); display:block; margin-bottom:4px;}
+
+  .note{
+    background:none; border-radius:0; padding:0; margin-top:20px;
+    font-size:15.5px; line-height:1.85; color:var(--ink);
+  }
+  .note b:first-child{
+    display:block; font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    color:var(--pink-deep); margin-bottom:6px; font-size:18px;
+  }
+
+  .quote-box{
+    border-left:none; padding:0; margin:16px 0;
+    font-size:17px; font-style:normal; font-weight:700; line-height:1.7; color:var(--ink);
+  }
+  .quote-box b{color:var(--pink-deep);}
+  .mini-quote{
+    border-left:none; padding:0; margin:6px 0; color:var(--sub); font-style:italic;
+  }
+
+  /* ── 원문 서술 블록 (요약 없이 그대로) ── */
+  .sub-block{margin:26px 0 0; padding-top:26px; border-top:1.5px solid var(--line);}
+  .sub-block:first-of-type{margin-top:20px; padding-top:0; border-top:none;}
+  .sub-head{
+    font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    font-size:20px; color:var(--ink); margin:0 0 12px; line-height:1.5;
+    display:inline; padding:1px 3px;
+    background-image:linear-gradient(var(--pink-light), var(--pink-light));
+    background-repeat:no-repeat; background-size:100% 50%; background-position:0 100%;
+    -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  }
+  .sub-text{font-size:16px; line-height:1.9; color:#5A4650; margin:0 0 10px;}
+  .sub-text:last-child{margin-bottom:0;}
+  .sub-text b{color:var(--pink-deep);}
+  .sub-list{
+    list-style:none; margin:0 0 14px; padding:17px 19px;
+    background:var(--pink-bg); border-radius:16px;
+  }
+  .sub-list li{
+    position:relative; padding-left:17px;
+    font-size:15.5px; line-height:1.85; color:var(--ink); margin-bottom:10px;
+  }
+  .sub-list li::before{content:'•'; position:absolute; left:0; top:0; color:var(--pink-deep); font-weight:800;}
+  .sub-list li:last-child{margin-bottom:0;}
+  .point-box{
+    background:var(--tip-bg); border:none; border-radius:16px;
+    padding:18px 19px; margin-top:16px; font-size:15.5px; line-height:1.9; color:var(--ink);
+  }
+  .point-box > b{
+    display:block; font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    color:var(--pink-deep); margin-bottom:12px; font-size:18px;
+  }
+  .point-box ul{list-style:none; margin:0; padding:0;}
+  .point-box li{position:relative; padding-left:16px; margin-bottom:10px;}
+  .point-box li::before{content:'·'; position:absolute; left:0; top:0; color:var(--pink-deep); font-weight:800;}
+  .point-box li:last-child{margin-bottom:0;}
+  .sub-block .item-list{margin:12px 0 0;}
+
+  /* ── 미니 교재 카드 ── */
+  .item-list{display:flex; flex-direction:column; gap:12px; margin:14px 0;}
+  .item{
+    display:flex; gap:13px; background:var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:12px; text-decoration:none; color:inherit;
+    transition:transform .15s;
+  }
+  .item:hover{transform:translateY(-2px);}
+  .item-cover{
+    flex:0 0 66px; width:66px; height:66px; border-radius:10px; overflow:hidden;
+    background:#FBEAEE; padding:5px;
+  }
+  .item-cover img{width:100%; height:100%; object-fit:contain;}
+  .item-body{flex:1; min-width:0;}
+  .item-sub{font-size:13.5px; font-weight:800; color:var(--pink-deep);}
+  .item-name{font-size:16.5px; font-weight:700; margin:2px 0 4px; line-height:1.4;}
+  .item-role{font-size:14.5px; color:var(--sub); line-height:1.6;}
+  .item-when{
+    display:inline-block; margin-top:6px; font-size:13.5px; font-weight:800;
+    color:#B8860B; background:#FFF9E6; border-radius:8px; padding:3px 9px;
+  }
+  .item.lk-none .item-when{color:var(--pink-deep); background:var(--pink-bg);}
+
+  /* ── 클로징 ── */
+  .closing{max-width:640px; margin:0 auto; padding:8px 18px 0;}
+  .voice{
+    background:var(--tip-bg); border:none;
+    border-radius:var(--radius); padding:22px 22px; margin-top:8px;
+    font-size:17px; line-height:1.95; color:var(--ink);
+  }
+  .voice b:first-child{
+    display:block; font-family:'Jalnan',-apple-system,sans-serif; font-weight:normal;
+    color:var(--pink-deep); font-size:21px; margin-bottom:8px;
+  }
+
+  footer{
+    text-align:center; padding:40px 18px 56px; color:var(--sub); font-size:15.5px;
+    border-top:1px solid var(--line); margin-top:34px; line-height:1.8;
+  }
+  footer .warn{
+    background:var(--pink-bg); color:var(--pink-deep); padding:13px 18px;
+    border-radius:12px; display:inline-block; margin-bottom:13px; font-size:15.5px;
+  }
+  footer a{color:var(--pink-deep); font-weight:700; text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="logo" src="character.png" alt="투빈맘 캐릭터">
+  <span class="badge">📐 투빈맘's 엄마표수학 자료나눔</span>
+  <h1>투빈맘's 엄마표수학💗<br>로드맵 (초1 성빈)</h1>
+  <p>7세부터 초1 여름방학까지,<br>실제로 걸어온 길 그대로예요</p>
+  <div class="hero-actions">
+    <a class="insta" href="https://www.instagram.com/2bin_mom/?hl=ko" target="_blank" rel="noopener">📸 @2bin_mom 인스타 보러가기</a>
+    <button type="button" class="share-btn" onclick="shareKakao(this)">💬 카톡으로 공유</button>
+  </div>
+</header>
+
+<div class="intro" id="landingView">
+  <div class="intro-box">
+    안녕하세요 :) <strong>투빈맘</strong>이에요 💖<br><span class="gap"></span>
+    성빈이는 형아 경빈이와 달리 <strong>한글보다 수학에 더 반응하는 아이</strong>라, <strong>수학 문제집 위주</strong>로만 학습을 이어가고 있어요😊<br><span class="gap"></span>
+    ✔️7세, 수학 기초 다지기부터,<br>
+    ✔️초1 1학기, 양보다 끊기지 않는 루틴 만들기,<br>
+    ✔️초1 1학기 5월~, 교재 하나씩 늘려가기,<br>
+    ✔️여름방학, 2학기 심화 문제 시작까지<br><span class="gap"></span>
+    시기가 지나면서 <strong>뭐가 어떻게 바뀌었는지</strong> 순서대로 정리했답니다💖
+  </div>
+
+  <div class="step-nav-meta">시기를 누르면 자세히 볼 수 있어요</div>
+  <div class="step-nav">
+    <a class="step-nav-card" href="#step0" onclick="showDetail('step0', event)">
+      <div class="step-nav-row">
+        <div class="step-nav-num">1</div>
+        <div class="step-nav-body">
+          <div class="step-nav-title">7세</div>
+          <p class="step-nav-desc">아직은 '공부'보다 '노출'.<br><b>기적의 유아수학</b>부터 <b>연산·시계</b>까지 천천히 확장한 시기예요.</p>
+        </div>
+      </div>
+    </a>
+    <a class="step-nav-card" href="#step1" onclick="showDetail('step1', event)">
+      <div class="step-nav-row">
+        <div class="step-nav-num">2</div>
+        <div class="step-nav-body">
+          <div class="step-nav-title">초1 1학기 (3~5월)</div>
+          <p class="step-nav-desc">학원 없이, <b>수학 중심 루틴</b>으로 기초를 쌓는 시기.<br>연산·문장제·시계 하루 1장씩, 끊기지 않는 루틴이 최우선이에요.</p>
+        </div>
+      </div>
+    </a>
+    <a class="step-nav-card" href="#step2" onclick="showDetail('step2', event)">
+      <div class="step-nav-row">
+        <div class="step-nav-num">3</div>
+        <div class="step-nav-body">
+          <div class="step-nav-title">초1 1학기 (5월~)</div>
+          <p class="step-nav-desc"><b>꼭공·개념수학 인강</b>을 새로 더하며 교재를 하나씩 늘려간 시기.<br>여전히 속도보다 정확도 중심이에요.</p>
+        </div>
+      </div>
+    </a>
+    <a class="step-nav-card" href="#step3" onclick="showDetail('step3', event)">
+      <div class="step-nav-row">
+        <div class="step-nav-num">4</div>
+        <div class="step-nav-body">
+          <div class="step-nav-title">여름방학</div>
+          <p class="step-nav-desc"><b>디딤돌 최상위 수학S</b>로 2학기 심화 문제를 처음 맛본 시기 ✨<br>어려운 문제에 익숙해지는 연습에 집중하고 있어요.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="wrap" id="detailView">
+  <div class="detail-topbar">
+    <button type="button" class="back-btn" onclick="showLanding(event)">← 목록으로</button>
+    <div class="detail-dots" id="detailDots">
+      <span data-s="step0"></span><span data-s="step1"></span><span data-s="step2"></span><span data-s="step3"></span>
+    </div>
+  </div>
+  <div class="timeline">
+
+    <!-- STEP 0 · 7세 -->
+    <section class="step s0" id="step0">
+      <div class="step-num">01</div>
+      <span class="step-tag">STEP 1 · 7세 (2025)</span>
+      <h2>아직은 '공부'보다 '노출', 그리고 수학</h2>
+      <p class="step-summary">성빈이는 형아와 달리, <b>수학 문제집 위주</b>로만 진행했어요! 한글엔 관심이 거의 없었고, 숫자·규칙·퍼즐 같은 <b>수학 활동에 더 흥미</b>를 보여서, 좋아하는 수학으로 먼저 <b>학습 루틴과 자신감을 만드는 전략</b>을 선택했어요.</p>
+      <p class="quote-box">✨ 좋아하면 오래 가고 → 오래 가면 실력이 붙고 → 실력이 붙으면 공부가 재미있어져요!</p>
+
+      <div class="sub-block">
+        <div class="sub-head">1. 5~7세 상반기 — 수학 기초 다지기</div>
+        <ul class="sub-list">
+          <li><b>기적의 유아 수학 A, B, C</b></li>
+        </ul>
+        <div class="item-list">
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/math-miracle-toddler-abc.jpg" alt="기적의 유아 수학 A,B,C 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">수학 기초</div>
+              <div class="item-name">기적의 유아 수학 (A·B·C)</div>
+              <div class="item-role">숫자·규칙·퍼즐 같은 수학 활동으로 가장 먼저 흥미를 붙인 교재예요.</div>
+              <span class="item-when">5~7세 상반기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-block">
+        <div class="sub-head">2. 7세 상반기 — 한글 떼고, 국어·수학 통합 학습</div>
+        <div class="sub-text">7세 여름쯤, 아무리 기다려도 한글 떼기에 관심이 없어서 결국 '소중한글'로 먼저 한글을 떼게 했어요. 한글을 떼고 나니 <b>꼭공이 [국어+수학] 통합이라 너무 편했어요!</b> 형아 경빈이는 기적의 계산법/문장제를 따로 풀었는데, 꼭공은 그 두 권이 합쳐진 느낌! 성빈이는 <b>한 권으로 퉁</b>~ 😂</div>
+        <ul class="sub-list">
+          <li><b>바빠 구구단</b> — 형아 덕에 구구단을 <b>빨리 뗐습니다</b>….ㅎ</li>
+        </ul>
+        <div class="item-list">
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/kkokgong-1-1.jpg" alt="꼭공 1학년 1권 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">국어+수학 통합</div>
+              <div class="item-name">꼭공 1학년 1권</div>
+              <div class="item-role">국어·수학이 한 권에 합쳐진 교재라, 형아 때보다 훨씬 편하게 진행했어요.</div>
+              <span class="item-when">7세 상반기</span>
+            </div>
+          </div>
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/bappa-gugudan.jpg" alt="바빠 구구단 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">구구단</div>
+              <div class="item-name">바빠 구구단</div>
+              <div class="item-role">형아 덕분에 구구단을 빠르게 뗀 교재예요.</div>
+              <span class="item-when">7세 상반기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-block">
+        <div class="sub-head">3. 7세 하반기 — 연산·시계로 확장</div>
+        <div class="sub-text">성빈이는 <b>연산 2-1로 바로 넘어가도 무리 없었어요!</b> 아이 수준 맞추니 과감한 패스 성공!<br><span class="mini-quote">(형아는 첫째라… 해야 할 건 다 해야 하는 줄 알고, 차근차근 전부 했어요 ㅠㅠ)</span></div>
+        <div class="item-list">
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/bappa-clock.jpg" alt="바빠 시계 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">시계</div>
+              <div class="item-name">바빠 시계</div>
+              <div class="item-role">생활 속 시간·달력 개념을 익히는 교재예요.</div>
+              <span class="item-when">7세 하반기</span>
+            </div>
+          </div>
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/bappa-yeonsan-2-1.jpg" alt="바빠 교과서 연산 2-1 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">연산</div>
+              <div class="item-name">바빠 교과서 연산 2-1</div>
+              <div class="item-role">또래보다 한 단계 높은 2-1로 바로 넘어가도 무리 없이 진행했어요.</div>
+              <span class="item-when">7세 하반기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-block">
+        <div class="sub-head">4. 사고력 수학 — 사용 중인 교재</div>
+        <ul class="sub-list">
+          <li><b>사고력 수학 필즈 (킨더 상)</b></li>
+        </ul>
+        <div class="item-list">
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/thinking-fields-kinder-sang.jpg" alt="사고력 수학 필즈 킨더 상 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">사고력 수학</div>
+              <div class="item-name">사고력 수학 필즈 (킨더 상)</div>
+              <div class="item-role">단순 계산을 넘어 생각하는 힘을 키우는 교재예요.</div>
+              <span class="item-when">7세 하반기</span>
+            </div>
+          </div>
+        </div>
+        <div class="point-box">
+          <b>💡 7세 마무리 포인트</b>
+          <ul>
+            <li>아이 관심이 '한글 ≪ 수학'이면 → <b>수학으로 루틴 잡는 게 훨씬 쉬움</b></li>
+            <li>한글을 억지로 시키면 오히려 <b>흥미와 거리감이 커질 수 있음</b></li>
+            <li>수학 성취감이 생기면 → <b>읽기·쓰기 동기까지 자연스럽게 연결됨</b></li>
+            <li>학습 루틴은 <b>'아이 성향 기준'</b>으로 설계하는 게 정답!</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step-jump">
+        <button type="button" class="main" onclick="showDetail('step1', event)">초1 1학기 보기 →</button>
+      </div>
+    </section>
+
+    <!-- STEP 1 · 초1 1학기 (3~5월) -->
+    <section class="step s1" id="step1">
+      <div class="step-num">02</div>
+      <span class="step-tag">STEP 2 · 초1 1학기 (3~5월, 2026)</span>
+      <h2>양보다 끊기지 않는 루틴 만들기</h2>
+      <p class="step-summary">학원 없이, <b>수학 중심 루틴</b>으로 기초를 쌓는 시기예요✨</p>
+      <p class="quote-box">문제집 양은 많지 않지만,<br>아이 속도에 맞춰 '매일 이어가는 것'에 집중한 루틴💗<br>빠르게보다 → <b>익숙해지는 게 목표인 단계</b></p>
+
+      <div class="sub-block">
+        <div class="sub-head">수학 (아침 루틴 핵심)</div>
+        <ul class="sub-list">
+          <li><b>연산</b> — 바빠 교과서 연산 2-1 · 하루 1바닥<br>→ <b>속도보다 정확도 중심</b></li>
+          <li><b>문장제</b> — 바빠 수학 문장제 1-2 · 하루 1장<br>→ <b>문제 이해하는 힘</b> 기르기</li>
+          <li><b>시계</b> — 바빠 시계 · 하루 1장<br>→ <b>생활 속 개념 연결</b></li>
+        </ul>
+        <div class="sub-text">문제집 종류는 많아 보이지만 → <b>양 자체는 많지 않음</b>. 다만 아이 속도가 느린 편이라 → <b>시간은 꽤 걸리는 스타일</b>. 웩슬러 검사에서도 <b>처리속도가 느리게 나와서</b> 빠르게 밀기보다 → <b>천천히 정확하게 쌓는 방향</b>으로 진행 중이에요😊</div>
+        <div class="item-list">
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/bappa-yeonsan-2-1.jpg" alt="바빠 교과서 연산 2-1 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">연산</div>
+              <div class="item-name">바빠 교과서 연산 2-1</div>
+              <div class="item-role">연산 속도·정확도를 끌어올리는 기본 체력 훈련용. 매일 짧게 풀며 부담 없이 수학 자신감을 유지해요.</div>
+              <span class="item-when">하루 1바닥</span>
+            </div>
+          </div>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/euig2M" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/bappa-munjangje.jpg" alt="바빠 수학 문장제 1-2 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">문장제</div>
+              <div class="item-name">바빠 수학 문장제 1-2</div>
+              <div class="item-role">문제 이해력·서술형을 대비하는 핵심 교재. 식 세우는 연습으로 사고 과정을 훈련해요.</div>
+              <span class="item-when">하루 1장</span>
+            </div>
+          </a>
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/bappa-clock.jpg" alt="바빠 시계 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">시계</div>
+              <div class="item-name">바빠 시계</div>
+              <div class="item-role">일상에서 바로 쓰는 시계·달력 읽기 훈련 교재. 몇 시 몇 분인지 생활 속에서 바로 연결해봐요.</div>
+              <span class="item-when">하루 1장</span>
+            </div>
+          </div>
+          <div class="item lk-none">
+            <div class="item-cover"><img src="images/thinking-fields-kinder-sang.jpg" alt="사고력 수학 필즈 킨더 상 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">사고력 수학</div>
+              <div class="item-name">사고력 수학 필즈 (킨더 상)</div>
+              <div class="item-role">단순 계산을 넘어 생각하는 힘을 키우는 교재. 정답보다 과정을 설명하게 해요.</div>
+              <span class="item-when">주 1회 정도</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note">
+        <b>📘 투빈맘 한줄 기록</b>
+        양이 적어도 괜찮아요 → <b>아이 속도에 맞는 게 더 중요</b>.<br><span class="gap"></span>
+        빠르게보다 → <b>익숙해지는 경험이 먼저</b>.<br><span class="gap"></span>
+        완벽하게 하려고 하면 무너짐 → <b>할 수 있는 만큼만 꾸준히</b>.<br><span class="gap"></span>
+        성빈이는 빠른 아이는 아니에요😊 그래서 더더욱 <b>"많이"보다, "끊기지 않는 루틴"</b>, 이걸 가장 중요하게 보고 있어요✨
+      </div>
+
+      <div class="step-jump">
+        <button type="button" onclick="showDetail('step0', event)">← 7세</button>
+        <button type="button" class="main" onclick="showDetail('step2', event)">초1 1학기(5월~) 보기 →</button>
+      </div>
+    </section>
+
+    <!-- STEP 2 · 초1 1학기 (5월~) -->
+    <section class="step s2" id="step2">
+      <div class="step-num">03</div>
+      <span class="step-tag">STEP 3 · 초1 1학기 (5월~, 2026)</span>
+      <h2>교재를 하나씩 늘려가는 시기</h2>
+      <p class="step-summary">수학 중심 루틴에서 기초를 쌓아가는 시기예요. 형아 1학년 때보다는 <b>쉬운 난이도</b>로 진행하고 있어요.</p>
+
+      <div class="sub-block">
+        <div class="sub-head">수학 (아침 루틴 핵심)</div>
+        <ul class="sub-list">
+          <li><b>연산</b> — 바빠 교과서 연산 2-2 · 하루 1바닥<br>→ <b>속도보다 정확도 중심</b></li>
+          <li><b>문장제</b> — 바빠 수학 문장제 2-1 · 하루 1장<br>→ <b>문제 이해하는 힘</b> 기르기</li>
+          <li><b>꼭공</b> — 꼭공 1학년 2권 · 하루 1장<br>→ <b>국어+수학 번갈아 연습!</b></li>
+          <li><b>사고력 수학</b> — 필즈 베이직(상) · 하루 1장<br>→ <b>사고력 문제 적응하기</b> <span class="mini-quote">(주로 오후에 해요)</span></li>
+          <li><b>개념 수학</b> — 그림으로 개념잡는 초등수학 2-1 · 하루 1~3장<br>→ <b>인강으로 개념 챙기기</b> <span class="mini-quote">(주로 오후에 해요)</span></li>
+        </ul>
+        <div class="sub-text">문제집 종류는 많아 보이지만 → <b>양 자체는 많지 않음</b>. 다만 아이 속도가 느린 편이라 → <b>시간은 꽤 걸리는 스타일</b>. 웩슬러 검사에서도 <b>처리속도가 느리게 나와서</b> 천천히 정확하게 쌓는 방향으로 진행 중이에요😊<br><span class="gap"></span>형아 때는 선행이 조금 부담스러워서 현행 위주로 진행했는데요. 1~2학년 수학은 난이도가 높지 않아 <b>개념만 잘 이해하면 충분히 따라갈 수 있겠더라고요.</b> 그래서 기본서는 부담 없이 조금 빠른 속도로 진도를 나가고 있어요.</div>
+        <div class="item-list">
+          <a class="item lk-coupang" href="https://link.coupang.com/a/ehzRLzkEN2" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/bappa-yeonsan-2-2.jpg" alt="바빠 교과서 연산 2-2 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">연산</div>
+              <div class="item-name">바빠 교과서 연산 2-2</div>
+              <div class="item-role">연산 속도·정확도를 끌어올리는 기본 체력 훈련용. 매일 짧게 풀며 수학 자신감을 유지해요.</div>
+              <span class="item-when">하루 1바닥</span>
+            </div>
+          </a>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/ehzX86rIrc" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/bappa-munjangje-2-1.jpg" alt="바빠 수학 문장제 2-1 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">문장제</div>
+              <div class="item-name">바빠 수학 문장제 2-1</div>
+              <div class="item-role">문제 이해력·서술형을 대비하는 핵심 교재. 식 세우는 연습으로 사고 과정을 훈련해요.</div>
+              <span class="item-when">하루 1장</span>
+            </div>
+          </a>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/ehz65VZPHM" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/kkokgong-1-2.jpg" alt="꼭공 1학년 2권 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">국어+수학 통합</div>
+              <div class="item-name">꼭공 1학년 2권</div>
+              <div class="item-role">국어·수학을 함께 익히며 기초 학습 습관을 만드는 교재. 하루 분량씩 번갈아 학습해요.</div>
+              <span class="item-when">하루 1장</span>
+            </div>
+          </a>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/ehBkcxMhdQ" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/thinking-fields-basic-sang.jpg" alt="사고력 수학 필즈 베이직 상 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">사고력 수학</div>
+              <div class="item-name">사고력 수학 필즈 (베이직 상)</div>
+              <div class="item-role">단순 계산을 넘어 생각하는 힘을 키우는 교재. 정답보다 과정을 설명하게 해요.</div>
+              <span class="item-when">여유 있을 때 (주 1회~)</span>
+            </div>
+          </a>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/ehBXZPdXMW" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/concept-math-2-1.jpg" alt="그림으로 개념잡는 초등수학 2-1 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">개념 수학 · 인강</div>
+              <div class="item-name">그림으로 개념잡는 초등수학 2-1</div>
+              <div class="item-role">그림과 무료 인강으로 개념을 익히는 교재. 문제 풀이보다 개념을 설명할 수 있는지 확인해요.</div>
+              <span class="item-when">하루 1~3장</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="change-box"><b>📈 뭐가 바뀌었나요</b>연산 2-1 → 2-2로 레벨업 · 문장제 새 버전(2-1) 추가 · 꼭공 1학년 2권 신규 도입(국어+수학 통합) · 그림으로 개념잡는 초등수학 2-1(인강) 신규 추가</div>
+
+      <div class="step-jump">
+        <button type="button" onclick="showDetail('step1', event)">← 초1 1학기(3~5월)</button>
+        <button type="button" class="main" onclick="showDetail('step3', event)">여름방학 보기 →</button>
+      </div>
+    </section>
+
+    <!-- STEP 3 · 여름방학 -->
+    <section class="step s3" id="step3">
+      <div class="step-num">04</div>
+      <span class="step-tag">STEP 4 · 여름방학 (2026)</span>
+      <h2>2-1 교과 심화, 처음 맛보기</h2>
+      <p class="quote-box">1학기 동안에는 기본 개념과 문장제, 사고력 문제를 조금씩 풀어왔다면<br>여름방학부터는 <b>2-1 교과 심화 문제</b>도 시작했어요.</p>
+      <p class="step-summary">바로 최상위 난이도로 넘어가기보다는 <b>「디딤돌 최상위 수학S」</b>로 아이의 현재 수준을 확인하면서 어려운 문제에 조금씩 익숙해지는 것부터 시작했어요. 아직은 어려운 문제를 척척 풀어내는 것보다 <b>"이런 문제도 있구나!" 경험</b>해보고, 조금 더 오래 생각해보는 연습을 하는 것에 의미를 두고 있어요.</p>
+
+      <div class="sub-block">
+        <div class="sub-head">수학 – 문제집 정리 (하루 2시간 정도)</div>
+        <div class="item-list">
+          <a class="item lk-coupang" href="https://link.coupang.com/a/ehzX86rIrc" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/bappa-munjangje-2-1.jpg" alt="바빠 수학 문장제 2-1 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">문장제</div>
+              <div class="item-name">바빠 수학 문장제 2-1</div>
+              <div class="item-role">문제 이해력·서술형을 대비하는 핵심 교재. 식 세우는 연습으로 사고 과정을 훈련해요.</div>
+              <span class="item-when">하루 2장씩</span>
+            </div>
+          </a>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/ehBXZPdXMW" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/concept-math-2-1.jpg" alt="그림으로 개념잡는 초등수학 2-1 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">개념 수학 · 인강</div>
+              <div class="item-name">그림으로 개념잡는 초등수학 2-1</div>
+              <div class="item-role">먼저 무료 인강을 보고 개념을 이해한 뒤, 그림과 예시로 개념을 확인해요.</div>
+              <span class="item-when">하루 4~5장씩</span>
+            </div>
+          </a>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/f4iDu22yvB" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/thinking-fields-basic-jung.jpg" alt="사고력 수학 필즈 베이직 중 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">사고력 수학</div>
+              <div class="item-name">사고력 수학 필즈 (베이직 중)</div>
+              <div class="item-role">단순 계산을 넘어 생각하는 힘을 키우는 사고력 교재. 정답보다 과정을 설명하게 해요.</div>
+              <span class="item-when">하루 2장씩</span>
+            </div>
+          </a>
+          <a class="item lk-coupang" href="https://link.coupang.com/a/f4i815KvGC" target="_blank" rel="noopener nofollow sponsored">
+            <div class="item-cover"><img src="images/didimdol-choisangwi-s.jpg" alt="디딤돌 최상위 수학S 표지" loading="lazy"></div>
+            <div class="item-body">
+              <div class="item-sub">최상위</div>
+              <div class="item-name">디딤돌 최상위 수학S</div>
+              <div class="item-role">기본 개념에서 한 단계 더 나아가 심화 문제 해결력을 키우는 교재. 어려운 문제는 정답보다 풀이 과정에 집중해요.</div>
+              <span class="item-when">하루 2장씩</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="change-box"><b>📈 뭐가 바뀌었나요</b>디딤돌 최상위 수학S로 2-1 심화 문제 신규 시작 · 사고력 필즈 베이직 상 → 중으로 레벨업 · 연산 문제집은 잠시 쉬어가는 중 · 문장제·개념수학은 분량만 늘려 계속 유지</div>
+
+      <div class="note">
+        <b>💬 투빈맘 한 줄 기록</b>
+        이번 여름방학은 3주 남짓이라 이것저것 많이 하기보다는 <b>초1 성빈이에게 지금 필요한 수학에 조금 더 집중</b>해봤어요😊<br><span class="gap"></span>
+        1학기에는 공부량을 늘리기보다 매일 꾸준히 하는 루틴을 만드는 것에 집중했다면,<br>
+        이번 여름방학에는 그 루틴을 유지하면서 <b>수학을 한 단계씩 확장</b>해보는 것을 목표로 했답니다✨
+      </div>
+
+      <div class="step-jump">
+        <button type="button" onclick="showDetail('step2', event)">← 초1 1학기(5월~)</button>
+        <button type="button" class="main" onclick="showLanding(event)">📋 전체 목록으로</button>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="closing" id="closingVoice">
+  <div class="voice">
+    <b>📘 투빈맘 한마디</b>
+    성빈이는 빠른 아이는 아니에요.<br>
+    그래서 더더욱 <strong>"많이"보다 "끊기지 않는 루틴"</strong>, 이걸 가장 중요하게 보고 있어요 💖<br><span class="gap"></span>
+    엄마표 공부는 정답이 있는 게 아니라,<br>
+    아이에 맞게 계속 조율해가는 과정인 것 같아요.<br><span class="gap"></span>
+    처음부터 완벽하게 하려고 하기보다 하나씩 가볍게 시작해 보시고,<br>
+    아이 반응 보면서 조정해 보시면 그걸로도 충분히 좋은 시작이라고 생각해요 😊
+  </div>
+</div>
+
+<footer>
+  <div class="intro-box" style="text-align:left; max-width:540px; margin:0 auto 18px;">
+    혹시 보시고, 궁금한 점이나 고민되는 부분 있으시면<br>
+    편하게 DM 주세요 💕<br>
+    늦더라도 꼭 확인하고, 답변 드리고 있답니다!<br><span class="gap"></span>
+    <a class="insta" href="https://www.instagram.com/2bin_mom/?hl=ko" target="_blank" rel="noopener">📸 @2bin_mom 인스타 DM 보내기</a>
+  </div>
+  <div class="warn">⚠️ 본 자료는 투빈맘이 직접 정리한 콘텐츠입니다.<br>무단 복제·캡처·배포 금지 🚫<br>상업적 활용 시 법적 조치가 이루어질 수 있습니다.</div>
+  <div>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.</div>
+  <div style="margin-top:9px;">© 2026 투빈맘 · <a href="https://www.instagram.com/2bin_mom/?hl=ko" target="_blank" rel="noopener">@2bin_mom</a></div>
+</footer>
+
+<script>
+const STEP_IDS = ["step0","step1","step2","step3"];
+
+function showDetail(id, evt){
+  if (evt) evt.preventDefault();
+  document.getElementById("landingView").style.display = "none";
+  document.getElementById("detailView").classList.add("open");
+  document.getElementById("closingVoice").style.display = "none";
+  STEP_IDS.forEach(sid => {
+    const el = document.getElementById(sid);
+    if (el) el.classList.toggle("open", sid === id);
+  });
+  document.querySelectorAll("#detailDots span").forEach(dot => {
+    dot.classList.toggle("on", dot.dataset.s === id);
+  });
+  window.scrollTo(0, 0);
+  history.pushState({view:"detail", id}, "", "#" + id);
+}
+
+function showLanding(evt){
+  if (evt) evt.preventDefault();
+  document.getElementById("detailView").classList.remove("open");
+  document.getElementById("landingView").style.display = "";
+  document.getElementById("closingVoice").style.display = "";
+  window.scrollTo(0, 0);
+  history.pushState({view:"landing"}, "", location.pathname);
+}
+
+function initView(){
+  const hash = STEP_IDS.indexOf(location.hash.replace("#","")) >= 0 ? location.hash.replace("#","") : null;
+  if (hash){
+    showDetail(hash, null);
+    history.replaceState({view:"detail", id:hash}, "", "#" + hash);
+  } else {
+    document.getElementById("landingView").style.display = "";
+    document.getElementById("detailView").classList.remove("open");
+    document.getElementById("closingVoice").style.display = "";
+    history.replaceState({view:"landing"}, "", location.pathname);
+  }
+}
+
+window.addEventListener("popstate", e => {
+  const st = e.state;
+  if (st && st.view === "detail") showDetail(st.id, null);
+  else showLanding(null);
+});
+
+initView();
+
+function shareKakao(btn){
+  const url = location.href;
+  if (navigator.share){ navigator.share({title:document.title, url}).catch(() => {}); return; }
+  const t = document.createElement("textarea");
+  t.value = url; t.style.position = "fixed"; t.style.opacity = "0";
+  document.body.appendChild(t); t.select();
+  let ok = false;
+  try { ok = document.execCommand("copy"); } catch(e){ ok = false; }
+  document.body.removeChild(t);
+  if (btn._timer) clearTimeout(btn._timer);
+  btn.classList.add("copied");
+  btn.textContent = ok ? "✅ 링크 복사완료!" : "🔗 " + url;
+  btn._timer = setTimeout(() => { btn.classList.remove("copied"); btn.textContent = "💬 카톡으로 공유"; }, ok ? 1800 : 4000);
+}
+</script>
+</body>
+</html>
